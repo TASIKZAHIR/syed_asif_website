@@ -1,0 +1,8 @@
+# Netlify Redirects Configuration
+# Route admin cleanly
+/admin          /admin.html     200
+/dashboard      /admin.html     200
+
+# Fallback for client routing
+/*              /index.html     200
+

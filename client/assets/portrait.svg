@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bodyGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#2d2d2d" />
+      <stop offset="100%" stop-color="#141414" />
+    </radialGradient>
+    <linearGradient id="suitHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a3a3a" />
+      <stop offset="50%" stop-color="#1c1c1c" />
+      <stop offset="100%" stop-color="#0f0f0f" />
+    </linearGradient>
+    <linearGradient id="skinTone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4d4d4" />
+      <stop offset="60%" stop-color="#9a9a9a" />
+      <stop offset="100%" stop-color="#6e6e6e" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#555555" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    <filter id="cinematicGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#cinematicGlow)">
+    <!-- Shoulders & Suit Jacket Body -->
+    <path d="M 120,700 L 160,460 L 220,380 L 250,330 L 350,330 L 380,380 L 440,460 L 480,700 Z" fill="url(#suitHighlight)" stroke="#383838" stroke-width="1.5" />
+    
+    <!-- Lapels -->
+    <path d="M 250,330 L 285,490 L 300,560 L 315,490 L 350,330 L 330,460 L 300,530 L 270,460 Z" fill="#181818" stroke="#333333" stroke-width="1" />
+    <!-- Inner Black Shirt -->
+    <polygon points="285,340 315,340 300,430" fill="#0d0d0d" />
+    
+    <!-- Neck -->
+    <path d="M 275,320 L 275,250 C 275,240 325,240 325,250 L 325,320 Z" fill="url(#skinTone)" />
+    <!-- Neck shadow -->
+    <path d="M 275,290 C 290,310 310,310 325,290 L 325,320 L 275,320 Z" fill="#4d4d4d" opacity="0.6"/>
+
+    <!-- Head & Jaw -->
+    <path d="M 255,200 C 255,140 270,110 300,110 C 330,110 345,140 345,200 C 345,255 330,275 300,275 C 270,275 255,255 255,200 Z" fill="url(#skinTone)" />
+
+    <!-- Stylized Modern Beard & Stubble -->
+    <path d="M 262,195 C 262,250 275,272 300,272 C 325,272 338,250 338,195 C 330,210 320,220 300,222 C 280,220 270,210 262,195 Z" fill="#2b2b2b" opacity="0.85"/>
+    <path d="M 285,240 C 295,245 305,245 315,240 C 310,248 290,248 285,240 Z" fill="#1b1b1b"/>
+
+    <!-- Modern Textured Short Hair & Fade -->
+    <path d="M 252,150 C 250,115 265,75 300,75 C 335,75 350,115 348,150 C 340,110 330,95 300,95 C 270,95 260,110 252,150 Z" fill="url(#hairGrad)" />
+    <!-- Hair Volume on Top -->
+    <path d="M 260,115 C 270,80 325,80 340,115 C 330,90 290,85 260,115 Z" fill="#666666" opacity="0.4"/>
+
+    <!-- Ears -->
+    <path d="M 250,185 C 245,185 245,215 252,220 Z" fill="#888888"/>
+    <path d="M 350,185 C 355,185 355,215 348,220 Z" fill="#888888"/>
+
+    <!-- Eyes & Brows (Monochrome Minimalist) -->
+    <path d="M 272,170 Q 284,166 292,170" stroke="#222" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 308,170 Q 316,166 328,170" stroke="#222" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="282" cy="180" rx="3" ry="2" fill="#1a1a1a"/>
+    <ellipse cx="318" cy="180" rx="3" ry="2" fill="#1a1a1a"/>
+
+    <!-- Nose -->
+    <path d="M 300,175 L 297,205 L 304,206" stroke="#555" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+    <!-- Hands in front pose (matching screenshot) -->
+    <g fill="#999999" stroke="#222222" stroke-width="1">
+      <!-- Right hand touching lapel / waist -->
+      <path d="M 340,510 C 355,510 370,525 365,550 C 360,565 340,565 330,555 C 325,545 328,515 340,510 Z" fill="url(#skinTone)"/>
+      <path d="M 345,520 L 360,530" stroke="#444" stroke-width="1.2"/>
+      <path d="M 343,530 L 358,540" stroke="#444" stroke-width="1.2"/>
+    </g>
+
+    <!-- Watch on wrist -->
+    <rect x="355" y="525" width="8" height="18" rx="2" fill="#FD6F00" opacity="0.85"/>
+  </g>
+</svg>
+
